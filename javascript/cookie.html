@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="jquery/jquery.min.js" ></script>
+	</head>
+	<body>
+		<div>cookie</div>
+		
+		<script type="text/javascript" src="js/cookie.js" ></script>
+		<script>
+			
+			$(function(){
+				//设置过期时间为7天
+				var seconds = 60*60*24*7;
+				setCookie("userpassword","czxValue",seconds);
+				alert(getCookie("userpassword"));
+				delCookie("userpassword");
+			})
+			
+		</script>
+	</body>
+</html>
