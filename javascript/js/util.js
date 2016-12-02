@@ -38,7 +38,7 @@ $.getUrlParam = function(name){
  */
 function loading(type,msg){
 	if(msg == null || msg == ''){
-		msg = "请稍后，正在加载......";
+		msg == "请稍后，正在加载......";
 	}
 	var body_width = document.body.clientWidth;
 	var body_height = document.body.clientHeight;
